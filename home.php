@@ -10,7 +10,7 @@
 			<div class="row with-border">
 				<h3>My Work</h3>
 				<div class="text-center">
-					<p>Use WordPress? You're using code I've built, maintained, or contributed to.</p>
+					<p>Use WordPress? You're using code I've designed, maintained, or substantially contributed to.</p>
 				</div>
 			</div>
 		</section>
