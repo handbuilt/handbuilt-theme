@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="columns text-center">
 				<div class="made-by">
-					<small>Made in <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> by Hand Built &bull; <a href="https://github.com/handbuilt"><i class="fa fa-github"></i> Github</a> &bull; <a href="https://twitter.com/handbuiltco"><i class="fa fa-twitter"></i> Twitter</a></small>
+					<small>Made in <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> by <a href="https://danielbachhuber.com/">Daniel Bachhuber</a> &bull; <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> &bull; <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a> &bull; <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a></small>
 				</div>
 			</div>
 		</div>
@@ -19,7 +19,7 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-75452026-1', 'auto');
+		ga('create', 'UA-49623239-1', 'auto');
 		ga('send', 'pageview');
 
 		</script>
