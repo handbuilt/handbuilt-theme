@@ -49,7 +49,11 @@ section.image-background {
 
 section.home-panel {
 	background-color: $white;
-	margin-top: 5rem;
+	margin-top: 3.5rem;
+	
+	@media #{$medium-up} {
+		margin-top: 5rem;
+	}
 
 	.row.with-border {
 		border-top: 2px solid $light-grey;

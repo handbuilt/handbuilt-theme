@@ -6192,7 +6192,10 @@ section.image-background {
 
 section.home-panel {
   background-color: #FFFFFF;
-  margin-top: 5rem; }
+  margin-top: 3.5rem; }
+  @media only screen and (min-width: 40.0625em) {
+    section.home-panel {
+      margin-top: 5rem; } }
   section.home-panel .row.with-border {
     border-top: 2px solid #EEF4F6; }
   section.home-panel .highlight {
