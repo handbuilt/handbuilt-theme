@@ -31,6 +31,14 @@ class Hand_Built {
 
 	private function setup_filters() {
 
+		add_filter( 'pre_option_blogname', function() {
+			return 'Hand Built';
+		});
+
+		add_filter( 'pre_option_blogdescription', function() {
+			return 'Technology leadership you can trust';
+		});
+
 		/**
 		 * Ensure plugin assets loaded from within the theme are served at a corrected URL
 		 */

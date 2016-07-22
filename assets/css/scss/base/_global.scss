@@ -4,4 +4,7 @@
 	font-size: 0.9rem;
 	line-height: 3rem;
 	letter-spacing: 1px;
+	@media #{$medium-only} {
+		font-size: 0.65rem;
+	}
 }

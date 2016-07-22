@@ -6099,6 +6099,9 @@ table {
   font-size: 0.9rem;
   line-height: 3rem;
   letter-spacing: 1px; }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    .tagline {
+      font-size: 0.65rem; } }
 
 header.site-header {
   padding-top: 1.8rem;
@@ -6114,6 +6117,45 @@ header.site-header {
 
 header#site-header h1 a {
   color: #36516C; }
+
+section.image-background {
+  background-color: #A8551B;
+  position: relative; }
+  section.image-background:after {
+    content: "";
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1; }
+    @media only screen and (min-width: 64.0625em) {
+      section.image-background:after {
+        background-image: url(../images/header-original.jpg); } }
+  section.image-background .inner {
+    color: #FFFFFF;
+    font-weight: 300;
+    z-index: 2;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    @media only screen and (min-width: 64.0625em) {
+      section.image-background .inner {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+        letter-spacing: 0.03rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem; } }
+    section.image-background .inner a {
+      color: #FFFFFF;
+      text-decoration: underline; }
 
 footer.site-footer {
   padding-top: 2rem;
