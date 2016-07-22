@@ -6204,7 +6204,7 @@ section.home-panel {
     color: #ABABAB; }
     section.home-panel .greyed a {
       color: #ABABAB; }
-  section.home-panel h3 {
+  section.home-panel h3.section-title {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 300;

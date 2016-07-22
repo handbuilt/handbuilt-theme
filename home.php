@@ -3,61 +3,94 @@
 	<div class="site-content">
 
 		<section class="image-background">
-			<div class="small-11 medium-10 text-center column small-centered inner callout">Hand Built is <a href="https://danielbachhuber.com/">Daniel Bachhuber</a>, an effective developer with technology leadership you can trust. How can I help you?</div>
+			<div class="small-11 medium-8 text-center column small-centered inner callout">Hand Built is <a href="https://danielbachhuber.com/">Daniel Bachhuber</a>, an effective developer with technology leadership you can trust.</div>
 		</section>
 
 		<section class="home-panel">
 			<div class="row">
-				<div class="columns medium-10 medium-centered">
-					<p>Let's connect</p>
+				<div class="columns hide-for-small medium-offset-1 medium-3">
+					<div class="daniel-mug"></div>
+				</div>
+				<div class="columns small-12 medium-8">
+					<h3>How can I help?</h3>
+					<p>Hit me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a> with a short note about what you'd like to do.</p>
+					<p>My roots are WordPress and publishing, but I also have experience with pretty much everything related to web development: React, Vagrant, Nginx, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, etc.</p>
+					<p>Want to connect? I'm on <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> or <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 				</div>
 			</div>
 		</section>
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3>Open Source</h3>
+				<h3 class="section-title">Professionally</h3>
+				<div class="columns">
+					<ul class="small-block-grid-1 medium-block-grid-3 text-center">
+						<li><a href="http://fusion.net"><img style="max-width:80px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/fusion.svg' ); ?>" alt="Fusion" /></a></li>
+						<li><a href="https://pantheon.io"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/pantheon.svg' ); ?>" alt="Pantheon" /></a></li>
+						<li><a href="https://airbnb.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/airbnb.svg' ); ?>" alt="Airbnb" /></a></li>
+						<li><a href="http://www.pbs.org/wgbh/frontline/"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/frontline.svg' ); ?>" alt="PBS Frontline" /></a></li>
+						<li><a href="https://vip.wordpress.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/wordpress_orange.svg' ); ?>" alt="WordPress.com VIP" /></a></li>
+						<li><a href="https://newrepublic.com/"><img style="max-width:175px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/new-republic.svg' ); ?>" alt="New Republic" /></a></li>
+						<li class="show-for-medium-up"><a href="https://easydigitaldownloads.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/edd.svg' ); ?>" alt="Easy Digital Downloads" /></a></li>
+						<li class="show-for-medium-up"><a href="http://suntimes.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/chicagosuntimes.svg' ); ?>" alt="Chicago Sun-Times" /></a></li>
+						<li class="show-for-medium-up"><a href="https://hmn.md/"><img style="max-width:175px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/humanmade_orange.svg' ); ?>" alt="Humanmade" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-panel">
+			<div class="row with-border">
+				<h3 class="section-title">Open Source</h3>
 				<div class="text-center">
 					<p>Use WordPress? You're using code I've designed, maintained, or substantially contributed to.</p>
 				</div>
 				<div class="columns medium-10 medium-centered">
-					<h4>Currently</h4>
-					<ul class="small-block-grid-1 medium-block-grid-3">
-						<li class="highlight"><a href="https://wp-cli.org/">WP-CLI</a></li>
-						<li class="highlight"><a href="https://wordpress.org/plugins/shortcode-ui/">Shortcake</a></li>
-						<li class="highlight"><a href="http://fieldmanager.org/">Fieldmanager</a></li>
-					</ul>
-					<ul class="small-block-grid-3 medium-block-grid-5">
-						<li><a href="https://wordpress.org/plugins/wp-native-php-sessions/">WP Native PHP Sessions</a></li>
-						<li><a href="https://wordpress.org/plugins/wp-redis/">WP Redis</a></li>
-						<li><a href="https://wordpress.org/plugins/wp-saml-auth/">WP SAML Auth</a></li>
+					<a href="https://wp-cli.org/"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/wp-cli.png' ); ?>" alt="WP-CLI" /></a>
+					<a href="https://v2.wp-api.org/"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/wp-rest-api.jpg' ); ?>" alt="WordPress REST API" /></a>
+				</div>
+				<div class="columns medium-10 medium-centered">
+					<ul class="small-block-grid-1 medium-block-grid-3" style="padding-top:1.5rem;">
+						<li>
+							<h3><a href="http://fieldmanager.org/">Fieldmanager</a></h3>
+							<p>A toolkit for developers to create complex administration screens in WordPress</p>
+						</li>
+						<li>
+							<h3><a href="https://wordpress.org/plugins/shortcode-ui/">Shortcake</a></h3>
+							<p>Shortcake makes using WordPress shortcodes a piece of cake</p>
+						</li>
+						<li>
+							<h3><a href="https://wordpress.org/plugins/wp-redis/">WP Redis</a></h3>
+							<p>Back your WP Object Cache with Redis</p>
+						</li>
 					</ul>
 				</div>
 				<div class="columns medium-10 medium-centered">
-					<p class="greyed">Previously: <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a>, <a href="https://wordpress.org/plugins/edit-flow/">Edit Flow</a>, <a href="https://wordpress.org/plugins/jetpack/">Jetpack</a>, <a href="https://wordpress.org/plugins/post-meta-inspector/">Post Meta Inspector</a>, <a href="https://wordpress.org/plugins/publishing-checklist/">Publishing Checklist</a>, <a href="https://wordpress.org/plugins/rewrite-rules-inspector/">Rewrite Rules Inspector</a>, <a href="https://wordpress.org/plugins/safe-redirect-manager/">Safe Redirect Manager</a>, <a href="https://github.com/humanmade/Salty-WordPress">Salty WordPress</a>, and many others.</p>
-					</ul>
+					<p class="greyed">As well as <a href="https://wordpress.org/plugins/co-authors-plus/">Co-Authors Plus</a>, <a href="https://wordpress.org/plugins/edit-flow/">Edit Flow</a>, <a href="https://wordpress.org/plugins/jetpack/">Jetpack</a>, <a href="https://wordpress.org/plugins/post-meta-inspector/">Post Meta Inspector</a>, <a href="https://wordpress.org/plugins/publishing-checklist/">Publishing Checklist</a>, <a href="https://wordpress.org/plugins/rewrite-rules-inspector/">Rewrite Rules Inspector</a>, <a href="https://wordpress.org/plugins/safe-redirect-manager/">Safe Redirect Manager</a>, <a href="https://github.com/humanmade/Salty-WordPress">Salty WordPress</a>, <a href="https://wordpress.org/plugins/wp-native-php-sessions/">WP Native PHP Sessions</a>, and <a href="https://wordpress.org/plugins/wp-saml-auth/">WP SAML Auth</a>. The list goes on for a while.</p>
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3>Clients</h3>
-
-			</div>
-		</section>
-		
-		<section class="home-panel">
-			<div class="row with-border">
-				<h3>Blog</h3>
-
-			</div>
-		</section>
-		
-		<section class="home-panel">
-			<div class="row with-border">
-				<h3>Snippets</h3>
-
+				<h3 class="section-title">Blog</h3>
+				<div class="columns">
+					<?php
+						$post_query = new WP_Query( array(
+							'post_type'      => 'post',
+							'posts_per_page' => 5,
+							'post_status'    => 'publish',
+						)); ?>
+					<ul class="small-block-grid-1 medium-block-grid-3">
+					<?php if ( $post_query->have_posts() ) : ?>
+						<?php while( $post_query->have_posts() ) : $post_query->the_post(); ?>
+							<li><h3><a title="<?php echo esc_attr( get_the_excerpt() ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<?php the_excerpt(); ?>
+							</li>
+						<?php endwhile; ?>
+					<?php endif; ?>
+					</ul>
+				</div>
 			</div>
 		</section>
 
