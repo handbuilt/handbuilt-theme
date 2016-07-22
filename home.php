@@ -80,11 +80,14 @@
 		<section class="home-panel">
 			<div class="row with-border">
 				<h3 class="section-title">Blog</h3>
+				<div class="text-center columns">
+					<p>What I've discovered recently.</p>
+				</div>
 				<div class="columns">
 					<?php
 						$post_query = new WP_Query( array(
 							'post_type'      => 'post',
-							'posts_per_page' => 5,
+							'posts_per_page' => 3,
 							'post_status'    => 'publish',
 						)); ?>
 					<ul class="small-block-grid-1 medium-block-grid-3">
