@@ -20,8 +20,10 @@ class Assets extends Controller {
 
 	public function action_wp_enqueue_scripts() {
 
+		wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Open+Sans:400italic,600italic,300,400,600' );
+
 		$time = filemtime( get_template_directory() . '/assets/css/style.css' );
-		wp_enqueue_style( 'handbuilt', get_template_directory_uri() . '/assets/css/style.css?r=' . (int) $time );
+		wp_enqueue_style( 'handbuilt', get_template_directory_uri() . '/assets/css/style.css?r=' . (int) $time, array( 'google-fonts' ) );
 	}
 
 }
