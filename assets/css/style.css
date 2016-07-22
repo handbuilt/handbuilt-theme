@@ -410,7 +410,7 @@ body {
 
 body {
   background: #FAFBFC;
-  color: #222;
+  color: #272727;
   cursor: auto;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -2278,7 +2278,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #272727;
   cursor: help; }
 
 abbr {
@@ -6106,7 +6106,8 @@ table {
 header.site-header {
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #A8551B; }
   header.site-header h1 {
     font-style: italic;
     font-weight: 700;
@@ -6114,9 +6115,19 @@ header.site-header {
     line-height: 2.5rem; }
     header.site-header h1 a {
       color: #36516C; }
+  body.home header.site-header {
+    border: none;
+    margin-bottom: 0; }
 
 header#site-header h1 a {
   color: #36516C; }
+
+.site-content {
+  background-color: #FFFFFF;
+  padding-bottom: 5rem;
+  padding-top: 2.5rem; }
+  body.home .site-content {
+    padding-top: 0; }
 
 section.image-background {
   background-color: #A8551B;
@@ -6156,6 +6167,32 @@ section.image-background {
     section.image-background .inner a {
       color: #FFFFFF;
       text-decoration: underline; }
+
+section.home-panel {
+  background-color: #FFFFFF;
+  margin-top: 5rem; }
+  section.home-panel .row.with-border {
+    border-top: 2px solid #EEF4F6; }
+  section.home-panel h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: -1.2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 18rem;
+    background-color: #FFFFFF;
+    color: #96BAC6; }
+
+header.page-header h2 {
+  margin-bottom: 1rem; }
+  header.page-header h2 small {
+    font-size: 40%;
+    vertical-align: middle;
+    color: #ABABAB; }
 
 footer.site-footer {
   padding-top: 2rem;

@@ -12,8 +12,8 @@ class Assets extends Controller {
 	public function action_admin_enqueue_scripts() {
 		$time = filemtime( get_template_directory() . '/assets/css/admin.css' );
 		wp_enqueue_style( 'handbuilt-admin', get_template_directory_uri() . '/assets/css/admin.css?r=' . (int) $time );
-		$time = filemtime( get_template_directory() . '/assets/js/admin.js' );
-		wp_enqueue_script( 'handbuilt-admin', get_stylesheet_directory_uri() . '/assets/js/admin.js?r=' . (int) $time, array( 'jquery' ) );
+		// $time = filemtime( get_template_directory() . '/assets/js/admin.js' );
+		// wp_enqueue_script( 'handbuilt-admin', get_stylesheet_directory_uri() . '/assets/js/admin.js?r=' . (int) $time, array( 'jquery' ) );
 		// $time = filemtime( get_template_directory() . '/assets/css/editor.css' );
 		// add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor.css?r=' . (int) $time );
 	}

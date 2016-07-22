@@ -2,6 +2,7 @@ header.site-header {
 	padding-top: 1.8rem;
 	padding-bottom: 1.8rem;
 	background-color: $white;
+	border-bottom: 3px solid $orange;
 	h1 {
 		font-style: italic;
 		font-weight: 700;
@@ -10,6 +11,11 @@ header.site-header {
 		a {
 			color: $dark-blue;
 		}
+	}
+
+	body.home & {
+		border: none;
+		margin-bottom: 0;
 	}
 }
 
