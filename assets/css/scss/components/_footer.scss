@@ -1,0 +1,20 @@
+footer.site-footer {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	.made-by {
+		color: $dark-grey;
+		img {
+			height: .6rem;
+			vertical-align: middle;
+			margin-top: -0.2rem;
+		}
+		a {
+			color: inherit;
+			&:hover {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+}

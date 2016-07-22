@@ -1,0 +1,20 @@
+{
+  "name": "handbuilt-theme",
+  "version": "0.0.0",
+  "main": "Gruntfile.js",
+  "author": "Hand Built",
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/handbuilt/handbuilt-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/handbuilt/handbuilt-theme/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "grunt": "^0.4.5",
+    "grunt-postcss": "^0.6.0",
+    "grunt-sass": "~1.1.0"
+  }
+}
