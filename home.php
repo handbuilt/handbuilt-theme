@@ -12,9 +12,12 @@
 					<div class="daniel-mug"></div>
 				</div>
 				<div class="columns small-12 medium-8">
+					<div class="show-for-small-only right">
+						<div class="daniel-mug"></div>
+					</div>
 					<h3>How can I help?</h3>
 					<p>Hit me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a> with a short note about what you'd like to do.</p>
-					<p>My roots are WordPress and publishing, but I also have experience with pretty much everything related to web development: React, Vagrant, Nginx, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, etc.</p>
+					<p>My roots are WordPress and publishing, and I have experience with pretty much everything related to web development: React, Vagrant, Nginx, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, etc. I'm uniquely qualified to match technologies to business needs.</p>
 					<p>Want to connect? I'm on <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> or <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 				</div>
 			</div>
@@ -23,6 +26,9 @@
 		<section class="home-panel">
 			<div class="row with-border">
 				<h3 class="section-title">Professionally</h3>
+				<div class="text-center columns">
+					<p>I've been fortunate to work with a number of impressive companies over the years.</p>
+				</div>
 				<div class="columns">
 					<ul class="small-block-grid-1 medium-block-grid-3 text-center">
 						<li><a href="http://fusion.net"><img style="max-width:80px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/fusion.svg' ); ?>" alt="Fusion" /></a></li>
@@ -32,7 +38,7 @@
 						<li><a href="https://vip.wordpress.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/wordpress_orange.svg' ); ?>" alt="WordPress.com VIP" /></a></li>
 						<li><a href="https://newrepublic.com/"><img style="max-width:175px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/new-republic.svg' ); ?>" alt="New Republic" /></a></li>
 						<li class="show-for-medium-up"><a href="https://easydigitaldownloads.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/edd.svg' ); ?>" alt="Easy Digital Downloads" /></a></li>
-						<li class="show-for-medium-up"><a href="http://suntimes.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/chicagosuntimes.svg' ); ?>" alt="Chicago Sun-Times" /></a></li>
+						<li><a href="http://suntimes.com"><img style="max-width:200px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/chicagosuntimes.svg' ); ?>" alt="Chicago Sun-Times" /></a></li>
 						<li class="show-for-medium-up"><a href="https://hmn.md/"><img style="max-width:175px" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/humanmade_orange.svg' ); ?>" alt="Humanmade" /></a></li>
 					</ul>
 				</div>
@@ -42,7 +48,7 @@
 		<section class="home-panel">
 			<div class="row with-border">
 				<h3 class="section-title">Open Source</h3>
-				<div class="text-center">
+				<div class="text-center columns">
 					<p>Use WordPress? You're using code I've designed, maintained, or substantially contributed to.</p>
 				</div>
 				<div class="columns medium-10 medium-centered">
