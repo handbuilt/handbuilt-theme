@@ -14,11 +14,11 @@
 	<header class="site-header">
 		<div class="row">
 
-			<div class="medium-3 show-for-medium-up column text-left tagline">Technology Leadership</div>
+			<div class="medium-4 large-3 show-for-medium-up column text-left tagline">Technology Leadership</div>
 
-			<h1 class="text-center small-12 medium-6 column"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hand Built</a></h1>
+			<h1 class="text-center small-12 medium-4 large-6 column"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hand Built</a></h1>
 
-			<div class="medium-3 show-for-medium-up column text-right tagline">Tualatin, Ore.</div>
+			<div class="medium-4 large-3 show-for-medium-up column text-right tagline">Tualatin, Ore.</div>
 
 		</div>
 	</header>

@@ -1,9 +1,32 @@
 footer.site-footer {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+
+	.daniel-mug {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -4rem;
+		@media #{$medium-only} {
+			margin-top: -3rem;
+		}
+		@media #{$small-only} {
+			margin-top: -2.5rem;
+		}
+	}
+	
+	.tagline {
+		padding-top: 3rem;
+		@media #{$small-only} {
+			padding-top: 1rem;
+			line-height: 1.5rem;
+		}
+	}
 
 	.made-by {
 		color: $dark-grey;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		@media #{$medium-up} {
+			padding-top: 2rem;
+		}
 		img {
 			height: .6rem;
 			vertical-align: middle;

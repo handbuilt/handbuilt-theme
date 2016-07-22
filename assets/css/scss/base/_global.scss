@@ -8,3 +8,35 @@
 		font-size: 0.65rem;
 	}
 }
+
+.callout {
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+	letter-spacing: 0.02rem;
+	@media #{$large-up} {
+		font-size: 1.7rem;
+		line-height: 2.8rem;
+		letter-spacing: 0.03rem;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+.daniel-mug {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	background: url(../images/daniel.jpg) no-repeat;
+	background-size: contain;
+	@media #{$medium-only} {
+		width: 130px;
+		height: 130px;
+		border-radius: 65px;
+	}
+
+	@media #{$small-only} {
+		width: 100px;
+		height: 100px;
+		border-radius: 50px;
+	}
+}

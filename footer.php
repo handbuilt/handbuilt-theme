@@ -1,5 +1,18 @@
 
 	<footer class="site-footer">
+
+		<div class="row show-for-medium-up">
+			<div class="medium-4 column text-left tagline">Technology Leadership</div>
+			<div class="medium-4 column"><div class="daniel-mug"></div></div>
+			<div class="medium-4 column text-right tagline">Tualatin, Ore.</div>
+		</div>
+
+		<div class="row show-for-small-only">
+			<div class="small-12 column"><div class="daniel-mug"></div></div>
+			<div class="small-12 column text-center tagline">Technology Leadership</div>
+			<div class="small-12 column text-center tagline">Tualatin, Ore.</div>
+		</div>
+
 		<div class="row">
 			<div class="columns text-center">
 				<div class="made-by">

@@ -1,6 +1,6 @@
 .site-content {
 	background-color: $white;
-	padding-bottom: 5rem;
+	padding-bottom: 7.5rem;
 	padding-top: 2.5rem;
 	body.home & {
 		padding-top: 0;
@@ -33,15 +33,9 @@ section.image-background {
 		color: $white;
 		font-weight: 300;
 		z-index: 2;
-		font-size: 1.5rem;
-		line-height: 2.4rem;
-		letter-spacing: 0.02rem;
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 		@media #{$large-up} {
-			font-size: 1.7rem;
-			line-height: 2.8rem;
-			letter-spacing: 0.03rem;
 			padding-top: 5rem;
 			padding-bottom: 5rem;
 		}
@@ -61,6 +55,22 @@ section.home-panel {
 		border-top: 2px solid $light-grey;
 	}
 
+	.highlight {
+		font-size: 200%;
+		line-height: 1.3;
+	}
+
+	a {
+		color: $orange;
+	}
+
+	.greyed {
+		color: $medium-grey;
+		a {
+			color: $medium-grey;
+		}
+	}
+
 	h3 {
 		text-transform: uppercase;
 		font-size: 1.5rem;
@@ -74,6 +84,17 @@ section.home-panel {
 		width: 18rem;
 		background-color: $white;
 		color: $medium-blue;
+	}
+
+	h4 {
+		font-family: $body-font-family;
+		text-transform: uppercase;
+		color: $dark-blue;
+		font-size: 0.8rem;
+		letter-spacing: 1px;
+		font-weight: 700;
+		margin-top: 0.7rem;
+		margin-bottom: 0.7rem;
 	}
 }
 
