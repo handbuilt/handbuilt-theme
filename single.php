@@ -26,6 +26,10 @@
 
 		<?php endif; ?>
 
+		<?php if ( ! is_home() ) : ?>
+			<?php echo Hand_Built::get_template_part( 'branded-intro' ); ?>
+		<?php endif; ?>
+
 	</div>
 
 <?php get_footer(); ?>

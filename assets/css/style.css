@@ -6160,6 +6160,8 @@ header#site-header h1 a {
 section.image-background {
   background-color: #A8551B;
   position: relative; }
+  body.single section.image-background {
+    margin-top: 3rem; }
   section.image-background:after {
     content: "";
     background-image: none;

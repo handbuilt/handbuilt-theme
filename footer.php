@@ -1,5 +1,6 @@
-
 	<footer class="site-footer">
+
+		<?php if ( ! is_single() ) : ?>
 
 		<div class="row show-for-medium-up">
 			<div class="medium-4 column text-left tagline">Technology Leadership</div>
@@ -12,6 +13,8 @@
 			<div class="small-12 column text-center tagline">Technology Leadership</div>
 			<div class="small-12 column text-center tagline">Tualatin, Ore.</div>
 		</div>
+
+		<?php endif; ?>
 
 		<div class="row">
 			<div class="columns text-center">

@@ -10,6 +10,10 @@
 section.image-background {
 	background-color: $orange;
 	position: relative;
+	
+	body.single & {
+		margin-top: 3rem;
+	}
 
 	&:after {
 		content: "";
