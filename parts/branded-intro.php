@@ -13,7 +13,7 @@
 			</div>
 			<h3>How can I help?</h3>
 			<p>Hit me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a> with a short note about what you'd like to do.</p>
-			<p>My roots are WordPress and publishing, and I have experience with pretty much everything related to web development: React, Vagrant, Nginx, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, etc. I'm uniquely qualified to match technologies to business needs.</p>
+			<p>My roots are WordPress and publishing, and I have experience with pretty much everything related to web development: React, Vagrant, Nginx, PHP, Python, Redis, Memcached, SCSS, SAML, YAML, devops, testing infrastructure, code review, product definition, etc. I'm uniquely qualified to match technologies to business needs.</p>
 			<p>Want to connect? I'm on <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> or <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 		</div>
 	</div>
