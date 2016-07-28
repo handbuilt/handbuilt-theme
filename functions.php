@@ -83,6 +83,7 @@ class Hand_Built {
 	private function setup_controllers() {
 		$controllers = array(
 			'\Hand_Built\Assets',
+			'\Hand_Built\Content_Model',
 		);
 		foreach( $controllers as $controller ) {
 			$controller::get_instance();

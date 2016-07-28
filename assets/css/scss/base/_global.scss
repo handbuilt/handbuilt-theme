@@ -1,3 +1,11 @@
+h3 a {
+	color: inherit;
+	&:hover {
+		text-decoration: underline;
+		color: inherit;
+	}
+}
+
 .tagline {
 	text-transform: uppercase;
 	color: $light-blue;

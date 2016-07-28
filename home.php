@@ -60,9 +60,9 @@
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title">Blog</h3>
+				<h3 class="section-title"><a href="<?php echo esc_url( home_url( 'blog/' ) ); ?>">Blog</a></h3>
 				<div class="text-center columns">
-					<p>What I've discovered recently.</p>
+					<p>What I've been doing and discovering.</p>
 				</div>
 				<div class="columns">
 					<?php

@@ -6093,6 +6093,12 @@ table {
   overflow: visible;
   clip: auto; }
 
+h3 a {
+  color: inherit; }
+  h3 a:hover {
+    text-decoration: underline;
+    color: inherit; }
+
 .tagline {
   text-transform: uppercase;
   color: #C0D5DC;
