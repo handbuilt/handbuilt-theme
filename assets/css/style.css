@@ -6094,10 +6094,10 @@ table {
   clip: auto; }
 
 h3 a {
-  color: inherit; }
+  color: #A8551B; }
   h3 a:hover {
     text-decoration: underline;
-    color: inherit; }
+    color: #A8551B; }
 
 .tagline {
   text-transform: uppercase;
@@ -6228,6 +6228,8 @@ section.home-panel {
     width: 18rem;
     background-color: #FFFFFF;
     color: #96BAC6; }
+    section.home-panel h3.section-title a, section.home-panel h3.section-title a:hover {
+      color: inherit; }
   section.home-panel h4 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;

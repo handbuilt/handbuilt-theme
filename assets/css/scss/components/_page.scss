@@ -92,6 +92,9 @@ section.home-panel {
 		width: 18rem;
 		background-color: $white;
 		color: $medium-blue;
+		a, a:hover {
+			color: inherit;
+		}
 	}
 
 	h4 {

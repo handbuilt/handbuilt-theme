@@ -1,8 +1,8 @@
 h3 a {
-	color: inherit;
+	color: $orange;
 	&:hover {
 		text-decoration: underline;
-		color: inherit;
+		color: $orange;
 	}
 }
 
