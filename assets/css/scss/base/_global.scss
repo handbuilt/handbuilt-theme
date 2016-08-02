@@ -47,4 +47,18 @@ h3 a {
 		height: 100px;
 		border-radius: 50px;
 	}
+	
+	.home-panel & {
+		@media #{$medium-only} {
+			width: 150px;
+			height: 150px;
+			border-radius: 75px;
+		}
+		@media #{$large-up} {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+	}
+
 }

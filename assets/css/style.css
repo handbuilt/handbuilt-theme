@@ -6137,6 +6137,16 @@ h3 a {
       width: 100px;
       height: 100px;
       border-radius: 50px; } }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    .home-panel .daniel-mug {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px; } }
+  @media only screen and (min-width: 64.0625em) {
+    .home-panel .daniel-mug {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px; } }
 
 header.site-header {
   padding-top: 1.8rem;
