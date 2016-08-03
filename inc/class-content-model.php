@@ -4,7 +4,9 @@ namespace Hand_Built;
 
 class Content_Model extends Controller {
 
-	protected static $custom_post_types = array();
+	protected static $custom_post_types = array(
+		'tip'
+	);
 
 	protected function setup_actions() {
 		add_action( 'init', array( $this, 'action_init_register_post_types' ) );
@@ -56,13 +58,14 @@ class Content_Model extends Controller {
 				)
 			);
 			switch ( $post_type ) {
-				case 'video':
-					$singular = 'Video';
-					$plural = 'Videos';
-					$args['menu_position'] = 6;
-					$args['menu_icon'] = 'dashicons-format-video';
-					$args['has_archive'] = 'videos';
-					$args['rewrite']['slug'] = 'video';
+				case 'tip':
+					$singular = 'Tip';
+					$plural = 'Tips';
+					$args['description'] = 'Short articles on how to solve many different problems.';
+					$args['menu_position'] = 7;
+					$args['menu_icon'] = 'dashicons-info';
+					$args['has_archive'] = 'tips';
+					$args['rewrite']['slug'] = 'tip';
 					break;
 			}
 			$args['labels'] = array(
