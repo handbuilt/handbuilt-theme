@@ -1,0 +1,19 @@
+pre {
+	margin-bottom: 1.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	background-color: scale-color($code-background-color, $lightness: 10%);
+	border-width: 1px;
+	border-style: solid;
+	border-color: scale-color($code-background-color, $lightness: -10%);
+}
+
+pre code {
+	display: block;
+	white-space: pre;
+	border: none;
+}
+
+code {
+	white-space:nowrap;
+}

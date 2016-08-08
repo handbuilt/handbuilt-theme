@@ -2208,7 +2208,7 @@ code {
   background-color: #f8f8f8;
   border-color: #dfdfdf;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
@@ -6147,6 +6147,23 @@ h3 a {
       width: 200px;
       height: 200px;
       border-radius: 100px; } }
+
+pre {
+  margin-bottom: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #f9f9f9;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dfdfdf; }
+
+pre code {
+  display: block;
+  white-space: pre;
+  border: none; }
+
+code {
+  white-space: nowrap; }
 
 header.site-header {
   padding-top: 1.8rem;
