@@ -1,0 +1,25 @@
+.page-comments {
+	.comment-list {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		.comment {
+			margin-bottom: 1.75rem;
+		}
+	}
+	.vcard {
+		border: none;
+		padding:0;
+		margin-bottom: 1.25rem;
+	}
+	.says {
+		display: none;
+	}
+	.comment-metadata {
+		display: inline-block;
+		float: right;
+		font-size: 80%;
+		a {
+			color: $medium-grey;
+		}
+	}
+}

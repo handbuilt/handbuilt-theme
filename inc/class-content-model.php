@@ -22,6 +22,8 @@ class Content_Model extends Controller {
 			return array_merge( array( 'post', 'page' ), $custom_post_types );
 		});
 
+		add_filter( 'comments_open', '__return_false' );
+
 		add_filter( 'register_post_type_args', function( $args, $post_type ) {
 			global $wp_rewrite;
 			if ( 'post' === $post_type ) {

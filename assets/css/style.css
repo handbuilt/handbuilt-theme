@@ -6274,6 +6274,27 @@ header.page-header h2 {
     vertical-align: middle;
     color: #ABABAB; }
 
+.page-comments .comment-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .page-comments .comment-list .comment {
+    margin-bottom: 1.75rem; }
+
+.page-comments .vcard {
+  border: none;
+  padding: 0;
+  margin-bottom: 1.25rem; }
+
+.page-comments .says {
+  display: none; }
+
+.page-comments .comment-metadata {
+  display: inline-block;
+  float: right;
+  font-size: 80%; }
+  .page-comments .comment-metadata a {
+    color: #ABABAB; }
+
 footer.site-footer .daniel-mug {
   margin-left: auto;
   margin-right: auto;
