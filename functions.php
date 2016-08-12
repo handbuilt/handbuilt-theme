@@ -56,6 +56,7 @@ class Hand_Built {
 
 	private function require_files() {
 
+		require_once __DIR__ . '/vendor/autoload.php';
 		require_once __DIR__ . '/lib/msm-sitemap/msm-sitemap.php';
 
 		spl_autoload_register( function( $class ) {

@@ -2,6 +2,8 @@
 
 namespace Hand_Built;
 
+use League\CommonMark\CommonMarkConverter;
+
 class Content_Model extends Controller {
 
 	protected static $custom_post_types = array(
@@ -34,6 +36,14 @@ class Content_Model extends Controller {
 			}
 			return $args;
 		}, 10, 2 );
+
+		$markdown_convert = function( $string ) {
+			$converter = new CommonMarkConverter;
+			return $converter->convertToHtml( $string );
+		};
+		foreach( array( 'the_excerpt', 'the_content' ) as $filter ) {
+			add_filter( $filter, $markdown_convert, 0 );
+		}
 
 	}
 
