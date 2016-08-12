@@ -87,6 +87,7 @@ class Hand_Built {
 		$controllers = array(
 			'\Hand_Built\Assets',
 			'\Hand_Built\Content_Model',
+			'\Hand_Built\Query',
 		);
 		foreach( $controllers as $controller ) {
 			$controller::get_instance();
