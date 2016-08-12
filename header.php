@@ -7,6 +7,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<?php echo Hand_Built::get_template_part( 'json-ld' ); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
