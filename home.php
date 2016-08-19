@@ -62,7 +62,7 @@
 			<div class="row with-border">
 				<h3 class="section-title"><a href="<?php echo esc_url( home_url( 'blog/' ) ); ?>">Blog</a></h3>
 				<div class="text-center columns">
-					<p>What I've been doing and discovering.</p>
+					<p><?php echo esc_html( get_post_type_object( 'post' )->description ); ?></p>
 				</div>
 				<div class="columns">
 					<?php
@@ -74,6 +74,32 @@
 					<ul class="small-block-grid-1 medium-block-grid-3">
 					<?php if ( $post_query->have_posts() ) : ?>
 						<?php while( $post_query->have_posts() ) : $post_query->the_post(); ?>
+							<li><h3><a title="<?php echo esc_attr( get_the_excerpt() ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<?php the_excerpt(); ?>
+							</li>
+						<?php endwhile; ?>
+					<?php endif; ?>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="home-panel">
+			<div class="row with-border">
+				<h3 class="section-title"><a href="<?php echo esc_url( home_url( 'tips/' ) ); ?>">Tips</a></h3>
+				<div class="text-center columns">
+					<p><?php echo esc_html( get_post_type_object( 'tip' )->description ); ?></p>
+				</div>
+				<div class="columns">
+					<?php
+						$tip_query = new WP_Query( array(
+							'post_type'      => 'tip',
+							'posts_per_page' => 3,
+							'post_status'    => 'publish',
+						)); ?>
+					<ul class="small-block-grid-1 medium-block-grid-3">
+					<?php if ( $tip_query->have_posts() ) : ?>
+						<?php while( $tip_query->have_posts() ) : $tip_query->the_post(); ?>
 							<li><h3><a title="<?php echo esc_attr( get_the_excerpt() ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<?php the_excerpt(); ?>
 							</li>

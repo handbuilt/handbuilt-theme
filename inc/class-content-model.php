@@ -29,6 +29,7 @@ class Content_Model extends Controller {
 			if ( 'post' === $post_type ) {
 				$archive_slug = 'blog';
 				$args['has_archive'] = $archive_slug;
+				$args['description'] = "What I've been doing and discovering.";
 				$archive_slug = $wp_rewrite->root . $archive_slug;
 				add_rewrite_rule( "{$archive_slug}/?$", "index.php?post_type=$post_type", 'top' );
 				$feeds = '(' . trim( implode( '|', $wp_rewrite->feeds ) ) . ')';
@@ -37,6 +38,13 @@ class Content_Model extends Controller {
 				add_rewrite_rule( "{$archive_slug}/{$wp_rewrite->pagination_base}/([0-9]{1,})/?$", "index.php?post_type=$post_type" . '&paged=$matches[1]', 'top' );
 			}
 			return $args;
+		}, 10, 2 );
+		
+		add_filter( 'post_type_archive_title', function( $title, $type ) {
+			if ( 'post' === $type ) {
+				return 'Blog';
+			}
+			return $title;
 		}, 10, 2 );
 
 		$markdown_convert = function( $string ) {

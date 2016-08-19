@@ -7,6 +7,8 @@
 			<div class="row">
 				<div class="columns medium-8 medium-centered">
 
+				<?php echo Hand_Built::get_template_part( 'archive-page-header' ); ?>
+
 				<?php while( have_posts() ) : the_post(); ?>
 
 					<article <?php post_class(); ?>
