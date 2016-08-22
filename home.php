@@ -6,7 +6,7 @@
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title">Professionally</h3>
+				<h3 class="section-title" id="professionally">Professionally</h3>
 				<div class="text-center columns">
 					<p>I've been fortunate to work with a number of impressive companies over the years.</p>
 				</div>
@@ -28,7 +28,7 @@
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title">Open Source</h3>
+				<h3 class="section-title" id="open-source">Open Source</h3>
 				<div class="text-center columns">
 					<p>Use WordPress? You're using code I've designed, maintained, or substantially contributed to.</p>
 				</div>
@@ -60,7 +60,7 @@
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title"><a href="<?php echo esc_url( home_url( 'blog/' ) ); ?>">Blog</a></h3>
+				<h3 class="section-title" id="blog"><a href="<?php echo esc_url( home_url( 'blog/' ) ); ?>">Blog</a></h3>
 				<div class="text-center columns">
 					<p><?php echo esc_html( get_post_type_object( 'post' )->description ); ?></p>
 				</div>
@@ -86,7 +86,7 @@
 
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title"><a href="<?php echo esc_url( home_url( 'tips/' ) ); ?>">Tips</a></h3>
+				<h3 class="section-title" id="blog"><a href="<?php echo esc_url( home_url( 'tips/' ) ); ?>">Tips</a></h3>
 				<div class="text-center columns">
 					<p><?php echo esc_html( get_post_type_object( 'tip' )->description ); ?></p>
 				</div>
