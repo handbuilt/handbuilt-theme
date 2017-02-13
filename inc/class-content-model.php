@@ -13,6 +13,14 @@ class Content_Model extends Controller {
 	protected function setup_actions() {
 		add_action( 'init', array( $this, 'action_init_register_post_types' ) );
 		add_action( 'init', array( $this, 'action_init_register_taxonomies' ) );
+		add_action( 'template_redirect', function() {
+			global $wp;
+
+			if ( 0 === stripos( $wp->request, 'tip' ) ){
+				wp_redirect( 'https://danielbachhuber.com/' . $wp->request, 301 );
+				exit;
+			}
+		});
 	}
 
 	protected function setup_filters() {
