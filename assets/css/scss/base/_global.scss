@@ -34,7 +34,7 @@ h3 a {
 	width: 150px;
 	height: 150px;
 	border-radius: 75px;
-	background: url(../images/daniel.jpg) no-repeat;
+	background: url(../images/daniel.jpg?1) no-repeat;
 	background-size: contain;
 	@media #{$medium-only} {
 		width: 130px;

@@ -6125,7 +6125,7 @@ h3 a {
   width: 150px;
   height: 150px;
   border-radius: 75px;
-  background: url(../images/daniel.jpg) no-repeat;
+  background: url(../images/daniel.jpg?1) no-repeat;
   background-size: contain; }
   @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
     .daniel-mug {
