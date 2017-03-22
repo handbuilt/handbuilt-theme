@@ -13,8 +13,8 @@
 			</div>
 			<h3>How can I help?</h3>
 			<p>Hit me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a> with a short note about what you'd like to do.</p>
-			<p>My roots are WordPress and publishing, and I have years of experience with pretty much everything related to web development (architecture, performance, security, etc.). I'm uniquely qualified to match technologies to business needs. When not working with clients, I also maintain <a href="https://wp-cli.org">WP-CLI</a> (WordPress' command line interface) and other open source projects.</p>
-			<p>Want to connect? I'm on <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> and <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
+			<p>My roots are WordPress and publishing, and I love pretty much everything related to web development (architecture, performance, security, etc.). When not working with clients, I also maintain <a href="https://wp-cli.org">WP-CLI</a> (WordPress' command line interface) and other open source projects.</p>
+			<p>Want to connect? I'm on <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> and <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a>. Or, <a href="http://tinyletter.com/danielbachhuber">sign up for my TinyLetter</a> for periodic newsletters.</p>
 		</div>
 	</div>
 </section>
