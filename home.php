@@ -74,7 +74,7 @@
 					<ul class="small-block-grid-1 medium-block-grid-3">
 						<?php foreach ( $rss_items as $item ) : ?>
 						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
-							<?php echo $item->description(); ?>
+							<?php echo $item->get_description(); ?>
 						</li>
 						<?php endforeach; ?>
 					</ul>
@@ -99,7 +99,7 @@
 					<ul class="small-block-grid-1 medium-block-grid-3">
 						<?php foreach ( $rss_items as $item ) : ?>
 						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
-							<?php echo $item->description(); ?>
+							<?php echo $item->get_description(); ?>
 						</li>
 						<?php endforeach; ?>
 					</ul>
