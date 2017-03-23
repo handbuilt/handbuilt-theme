@@ -62,7 +62,7 @@
 			$blog_feed = fetch_feed( 'http://danielbachhuber.com/category/work/feed/' );
 			if ( ! is_wp_error( $blog_feed ) ) :
 				$maxitems = $blog_feed->get_item_quantity( 3 );
-				$rss_items = $rss->get_items( 0, $maxitems );
+				$rss_items = $blog_feed->get_items( 0, $maxitems );
 				?>
 		<section class="home-panel">
 			<div class="row with-border">
