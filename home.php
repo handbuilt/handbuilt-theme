@@ -59,10 +59,10 @@
 		</section>
 
 		<?php
-			$blog_feed = fetch_feed( 'http://danielbachhuber.com/category/work/feed/' );
-			if ( ! is_wp_error( $blog_feed ) ) :
-				$maxitems = $blog_feed->get_item_quantity( 3 );
-				$rss_items = $blog_feed->get_items( 0, $maxitems );
+			$rss = fetch_feed( 'http://danielbachhuber.com/category/work/feed/' );
+			if ( ! is_wp_error( $rss ) ) :
+				$maxitems = $rss->get_item_quantity( 3 );
+				$rss_items = $rss->get_items( 0, $maxitems );
 				?>
 		<section class="home-panel">
 			<div class="row with-border">
@@ -74,7 +74,7 @@
 					<ul class="small-block-grid-1 medium-block-grid-3">
 						<?php foreach ( $rss_items as $item ) : ?>
 						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
-							<?php echo $item->get_excerpt(); ?>
+							<?php echo $item->description(); ?>
 						</li>
 						<?php endforeach; ?>
 					</ul>
@@ -83,31 +83,30 @@
 		</section>
 		<?php endif; ?>
 
+		<?php
+			$rss = fetch_feed( 'http://danielbachhuber.com/tips/feed/' );
+			if ( ! is_wp_error( $rss ) ) :
+				$maxitems = $rss->get_item_quantity( 3 );
+				$rss_items = $rss->get_items( 0, $maxitems );
+				?>
 		<section class="home-panel">
 			<div class="row with-border">
-				<h3 class="section-title" id="blog"><a href="<?php echo esc_url( home_url( 'tips/' ) ); ?>">Tips</a></h3>
+				<h3 class="section-title" id="blog"><a href="https://danielbachhuber.com/tips/">Tips</a></h3>
 				<div class="text-center columns">
 					<p><?php echo esc_html( get_post_type_object( 'tip' )->description ); ?></p>
 				</div>
 				<div class="columns">
-					<?php
-						$tip_query = new WP_Query( array(
-							'post_type'      => 'tip',
-							'posts_per_page' => 3,
-							'post_status'    => 'publish',
-						)); ?>
 					<ul class="small-block-grid-1 medium-block-grid-3">
-					<?php if ( $tip_query->have_posts() ) : ?>
-						<?php while( $tip_query->have_posts() ) : $tip_query->the_post(); ?>
-							<li><h3><a title="<?php echo esc_attr( get_the_excerpt() ); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<?php the_excerpt(); ?>
-							</li>
-						<?php endwhile; ?>
-					<?php endif; ?>
+						<?php foreach ( $rss_items as $item ) : ?>
+						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
+							<?php echo $item->description(); ?>
+						</li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</div>
 		</section>
+		<?php endif; ?>
 
 	</div>
 
