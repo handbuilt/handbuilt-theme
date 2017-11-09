@@ -58,56 +58,6 @@
 			</div>
 		</section>
 
-		<?php
-			$rss = fetch_feed( 'http://danielbachhuber.com/category/work/feed/' );
-			if ( ! is_wp_error( $rss ) ) :
-				$maxitems = $rss->get_item_quantity( 3 );
-				$rss_items = $rss->get_items( 0, $maxitems );
-				?>
-		<section class="home-panel">
-			<div class="row with-border">
-				<h3 class="section-title" id="blog"><a href="https://danielbachhuber.com/">Blog</a></h3>
-				<div class="text-center columns">
-					<p><?php echo esc_html( get_post_type_object( 'post' )->description ); ?></p>
-				</div>
-				<div class="columns">
-					<ul class="small-block-grid-1 medium-block-grid-3">
-						<?php foreach ( $rss_items as $item ) : ?>
-						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
-							<?php echo $item->get_description(); ?>
-						</li>
-						<?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<?php endif; ?>
-
-		<?php
-			$rss = fetch_feed( 'http://danielbachhuber.com/tips/feed/' );
-			if ( ! is_wp_error( $rss ) ) :
-				$maxitems = $rss->get_item_quantity( 3 );
-				$rss_items = $rss->get_items( 0, $maxitems );
-				?>
-		<section class="home-panel">
-			<div class="row with-border">
-				<h3 class="section-title" id="blog"><a href="https://danielbachhuber.com/tips/">Tips</a></h3>
-				<div class="text-center columns">
-					<p><?php echo esc_html( get_post_type_object( 'tip' )->description ); ?></p>
-				</div>
-				<div class="columns">
-					<ul class="small-block-grid-1 medium-block-grid-3">
-						<?php foreach ( $rss_items as $item ) : ?>
-						<li><h3><a href="<?php echo esc_url( $item->get_permalink() ); ?>"><?php echo esc_html( $item->get_title() ); ?></a></h3>
-							<?php echo $item->get_description(); ?>
-						</li>
-						<?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<?php endif; ?>
-
 	</div>
 
 <?php get_footer(); ?>
