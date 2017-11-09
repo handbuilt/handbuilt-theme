@@ -19,7 +19,7 @@
 		<div class="row">
 			<div class="columns text-center">
 				<div class="made-by">
-					<small>Made in <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> by <a href="https://danielbachhuber.com/">Daniel Bachhuber</a><br /><a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a> &bull; <a href="https://twitter.com/danielbachhuber"><i class="fa fa-twitter"></i> Twitter</a> &bull; <a href="https://www.linkedin.com/in/danielbachhuber"><i class="fa fa-linkedin"></i> LinkedIn</a></small>
+					<small>Made in <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/oregon.svg' ); ?>" /> by <a href="https://danielbachhuber.com/">Daniel Bachhuber</a><br /><a href="https://github.com/danielbachhuber"><i class="fa fa-github"></i> Github</a></small>
 				</div>
 			</div>
 		</div>
