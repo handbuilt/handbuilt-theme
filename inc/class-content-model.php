@@ -20,6 +20,14 @@ class Content_Model extends Controller {
 				wp_redirect( 'https://danielbachhuber.com/' . $wp->request, 301 );
 				exit;
 			}
+			if ( 0 === stripos( $wp->request, '2015' ) ){
+				wp_redirect( 'https://danielbachhuber.com/' . $wp->request, 301 );
+				exit;
+			}
+			if ( 0 === stripos( $wp->request, '2016' ) ){
+				wp_redirect( 'https://danielbachhuber.com/' . $wp->request, 301 );
+				exit;
+			}
 		});
 	}
 
