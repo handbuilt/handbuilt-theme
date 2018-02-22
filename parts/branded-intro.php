@@ -13,7 +13,7 @@
 			</div>
 			<h3>How can I help?</h3>
 			<p>Hit me at <a href="mailto:daniel@handbuilt.co">daniel@handbuilt.co</a> with a short note about what you'd like to do.</p>
-			<p>My roots are WordPress and publishing, and I love pretty much everything related to web development (architecture, performance, security, etc.). When not working with clients, I also maintain <a href="https://wp-cli.org">WP-CLI</a> (WordPress' command line interface) and other open source projects.</p>
+			<p>My roots are WordPress and publishing, and I love pretty much everything related to web development (architecture, performance, security, etc.). When not working with clients, I also contribute to <a href="https://wp-cli.org">WP-CLI</a> (WordPress' command line interface) and other open source projects.</p>
 		</div>
 	</div>
 </section>
